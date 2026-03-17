@@ -1,0 +1,79 @@
+:root {
+    --font-family: 'Quicksand', sans-serif;
+    --btn-radius: 20px;
+    --grid-gap: 12px;
+    --calc-padding: 24px;
+    
+    /* Default Pastel Theme */
+    --bg-color: #ffe6ea;
+    --calc-bg: rgba(255, 255, 255, 0.85);
+    --display-bg: transparent;
+    --text-main: #5c4d5a;
+    --text-muted: #9e8e9c;
+    --btn-bg: #fff0f3;
+    --btn-hover: #ffdde4;
+    --btn-operator: #ffb3c6;
+    --btn-operator-hover: #ff9fb6;
+    --btn-action: #ffc2d1;
+    --btn-equals: #ff8fab;
+    --shadow: 0 15px 35px rgba(255, 143, 171, 0.2);
+    --backdrop: blur(10px);
+}
+
+/* --- THEMES --- */
+[data-theme="dark"] {
+    --bg-color: #1a1a2e;
+    --calc-bg: rgba(22, 33, 62, 0.9);
+    --text-main: #e94560;
+    --text-muted: #8d93ab;
+    --btn-bg: #0f3460;
+    --btn-hover: #17457c;
+    --btn-operator: #e94560;
+    --btn-operator-hover: #d13d56;
+    --btn-action: #533483;
+    --btn-equals: #e94560;
+    --shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="minimal"] {
+    --bg-color: #f4f4f6;
+    --calc-bg: #ffffff;
+    --text-main: #333333;
+    --text-muted: #888888;
+    --btn-bg: #f9f9f9;
+    --btn-hover: #eeeeee;
+    --btn-operator: #e2e2e2;
+    --btn-operator-hover: #d0d0d0;
+    --btn-action: #e2e2e2;
+    --btn-equals: #333333;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="floral"] {
+    --bg-color: #e3f2fd;
+    --calc-bg: rgba(255, 255, 255, 0.9);
+    --text-main: #2e7d32;
+    --text-muted: #81c784;
+    --btn-bg: #f1f8e9;
+    --btn-hover: #dcedc8;
+    --btn-operator: #a5d6a7;
+    --btn-operator-hover: #81c784;
+    --btn-action: #c8e6c9;
+    --btn-equals: #66bb6a;
+    --shadow: 0 15px 35px rgba(76, 175, 80, 0.2);
+    background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20 5c-2.5 0-4.5 2-4.5 4.5S17.5 14 20 14s4.5-2 4.5-4.5S22.5 5 20 5zm0 20c-2.5 0-4.5 2-4.5 4.5S17.5 34 20 34s4.5-2 4.5-4.5S22.5 25 20 25zm10-10c0-2.5-2-4.5-4.5-4.5S21 12.5 21 15s2 4.5 4.5 4.5S30 17.5 30 15zM10 15c0-2.5-2-4.5-4.5-4.5S1 12.5 1 15s2 4.5 4.5 4.5S10 17.5 10 15z" fill="%23a5d6a7" fill-opacity="0.3"/></svg>');
+}
+
+[data-theme="candy"] {
+    --bg-color: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    --calc-bg: rgba(255, 255, 255, 0.7);
+    --text-main: #6b4c8a;
+    --text-muted: #9b7eb5;
+    --btn-bg: rgba(255, 255, 255, 0.6);
+    --btn-hover: rgba(255, 255, 255, 0.9);
+    --btn-operator: #fbc2eb;
+    --btn-operator-hover: #f9a8e0;
+    --btn-action: #a18cd1;
+    --btn-equals: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    --shadow: 0 15px 35px rgba(161, 140, 209, 0.4);
+}
