@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pastel">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" type="module"></script>
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <div id="petal-container"></div>
+
+    <div class="calculator-wrapper">
+        <button id="settings-btn" class="icon-btn" aria-label="Settings"><i class="fas fa-cog"></i></button>
+
+        <div class="calculator">
+            <div class="display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+
+            <div class="keypad" id="keypad">
+                <button class="btn action" data-action="clear">C</button>
+                <button class="btn action" data-action="delete"><i class="fas fa-backspace"></i></button>
+                <button class="btn operator" data-action="operator" data-val="÷">÷</button>
+                <button class="btn operator" data-action="operator" data-val="×">×</button>
+
+                <button class="btn number" data-val="7">7</button>
+                <button class="btn number" data-val="8">8</button>
+                <button class="btn number" data-val="9">9</button>
+                <button class="btn operator" data-action="operator" data-val="−">−</button>
+
+                <button class="btn number" data-val="4">4</button>
+                <button class="btn number" data-val="5">5</button>
+                <button class="btn number" data-val="6">6</button>
+                <button class="btn operator" data-action="operator" data-val="+">+</button>
+
+                <button class="btn number" data-val="1">1</button>
+                <button class="btn number" data-val="2">2</button>
+                <button class="btn number" data-val="3">3</button>
+                <button class="btn equals span-two-vertical" data-action="calculate">=</button>
+
+                <button class="btn number span-two-horizontal" data-val="0">0</button>
+                <button class="btn number" data-val=".">.</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="settings-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>✨ Customization</h2>
+                <button id="close-settings" class="icon-btn"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="settings-group">
+                <label>🎨 Theme</label>
+                <select id="theme-select">
+                    <option value="pastel">🌸 Cute Pastel</option>
+                    <option value="dark">🌙 Dark Mode Aesthetic</option>
+                    <option value="floral">🌼 Floral</option>
+                    <option value="minimal">🧁 Soft Minimal</option>
+                    <option value="candy">🌈 Gradient Candy</option>
+                </select>
+            </div>
+
+            <div class="settings-group">
+                <label>💠 Button Shape</label>
+                <select id="shape-select">
+                    <option value="rounded">Rounded</option>
+                    <option value="pill">Pill</option>
+                    <option value="square">Square</option>
+                </select>
+            </div>
+
+            <div class="settings-group">
+                <label>📏 Layout Spacing</label>
+                <select id="spacing-select">
+                    <option value="compact">Compact</option>
+                    <option value="spacious">Spacious</option>
+                </select>
+            </div>
+
+            <div class="settings-group toggle-group">
+                <label>🌺 Flower Design Mode</label>
+                <label class="switch">
+                    <input type="checkbox" id="flower-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="settings-group">
+                <label>🌸 Petal Intensity</label>
+                <select id="intensity-select">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <div class="settings-group toggle-group">
+                <label>🎵 Cute Sound Effects</label>
+                <label class="switch">
+                    <input type="checkbox" id="sound-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
